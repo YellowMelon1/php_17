@@ -101,9 +101,6 @@ jobs:
         then
           echo "HAS_SESSION=True" >> $GITHUB_ENV
         fi
-        # Add --on-finish exit into COMMAND & RETRY_COMMAND
-        echo "COMMAND=${{ env.COMMAND }} --on-finish exit" >> $GITHUB_ENV
-        echo "RETRY_COMMAND=${{ env.RETRY_COMMAND }} --on-finish exit" >> $GITHUB_ENV
 
 # USE GITHUB CACHE IF COMMAND HAS --SESSION
 # IF YOU FACE ANY ERROR, TRY TO DELETE OLD GITHUB ACTION CACHE
